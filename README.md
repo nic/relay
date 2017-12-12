@@ -5,13 +5,13 @@ Kit para Iniciantes no Relay Modern (baseado no create-react-app)
 # Como rodar
 ```sh
 
-yarn global add ttab
-
 yarn install
 
-ttab -G -t relay yarn relay
-ttab -G -t proxy yarn proxy
-ttab -G -t react yarn start
+# Em uma aba
+yarn relay
+
+# Em outra aba
+yarn start
 
 ```
 
