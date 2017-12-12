@@ -1,15 +1,15 @@
 import React from 'react';
 import { QueryRenderer, graphql } from "react-relay";
-import environment from './Environment';
-
 import UserProfile from 'components/UserProfile'
 import UserVisitCard from 'components/UserVisitCard'
 
-const MainRelay = ({viewer}) =>
-  <div className="Box Box-container">
-    <UserProfile {...viewer}/>
-    <UserVisitCard {...viewer}/>
-  </div>;
+import environment from './Environment';
+
+const variables = {
+  user_id: 'cjb3neu7x0rle01130wksqy9w'
+  // user_id: 'cjb3ng15o2p4301066mw7bfjl'
+  // user_id: 'cjb3nge9p0yqq0113vhc9clel'
+};
 
 const query = graphql`
     query MainRelayQuery ($user_id:ID!) {
@@ -22,16 +22,16 @@ const query = graphql`
     }
 `;
 
-const variables = {
-  user_id: 'cjb3neu7x0rle01130wksqy9w'
-  // user_id: 'cjb3ng15o2p4301066mw7bfjl'
-  // user_id: 'cjb3nge9p0yqq0113vhc9clel'
-};
+const MainRelay = ({viewer}) =>
+  <div className="Box Box-container">
+    <UserProfile {...viewer}/>
+    <UserVisitCard {...viewer}/>
+  </div>;
 
 export default () => <QueryRenderer
   environment={environment}
-  query={query}
   variables={variables}
+  query={query}
   render={
     ({error, props}) => {
       if (error) {
