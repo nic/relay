@@ -1,6 +1,9 @@
 # relay
 Kit para Iniciantes no Relay Modern (baseado no create-react-app)
 
+# Antes de qualquer coisa
+Entre no Slack do React Brasil: [https://react-brasil-slack.herokuapp.com](https://react-brasil-slack.herokuapp.com)
+
 
 # Como rodar
 ```sh
