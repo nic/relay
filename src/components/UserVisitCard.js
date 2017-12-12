@@ -1,7 +1,6 @@
 import React from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
 
-
 const UserVisitCard = ({User}) =>
   <div className="Box Box-border">
     <strong>Cartão de visita</strong>
