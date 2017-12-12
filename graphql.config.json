@@ -1,0 +1,16 @@
+{
+  "schema": {
+    "READ_FROM_file": "graphql.schema.json",
+    "request": {
+      "url" : "https://api.graph.cool/relay/v1/cjb3n7jnp0ir70184sgit9e4v",
+      "method" : "POST",
+      "postIntrospectionQuery" : true
+    }
+  },
+  "endpoints" : [
+    {
+      "name": "Default (graph.cool)",
+      "url": "https://api.graph.cool/relay/v1/cjb3n7jnp0ir70184sgit9e4v"
+    }
+  ]
+}
